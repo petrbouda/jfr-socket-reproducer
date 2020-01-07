@@ -8,7 +8,9 @@ openjdk 14-ea 2020-03-17
 OpenJDK Runtime Environment (build 14-ea+28-1366)
 OpenJDK 64-Bit Server VM (build 14-ea+28-1366, mixed mode, sharing)
 ```
-- IntelliJ
+
+- IntelliJ IDEA
+![intellij](intellij.png)
 
 - OS
 Linux Mint (5.0.0-37-generic)

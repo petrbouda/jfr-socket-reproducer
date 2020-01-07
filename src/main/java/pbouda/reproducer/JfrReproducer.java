@@ -46,7 +46,9 @@ public class JfrReproducer {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.submit(() -> {
             try (EventStream es = new RecordingStream(config)) {
+                // Different event with a stacktrace works fine!
                 // es.onEvent("jdk.ThreadSleep", System.out::println);
+                es.onEvent("jdk.SocketRead", System.out::println);
                 es.onEvent("jdk.SocketRead", e -> {
                     // ClassCastException -> 'jdk.jfr.consumer.RecordedObject' instead of 'jdk.jfr.consumer.RecordedMethod'
                     // System.out.println(e);
