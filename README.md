@@ -1,4 +1,18 @@
-# jfr-socket-reproducer
+# JFR STREAMING SOCKET EVENT REPRODUCER
+
+- Environment:
+- JAVA: 
+```
+$ java --version
+openjdk 14-ea 2020-03-17
+OpenJDK Runtime Environment (build 14-ea+28-1366)
+OpenJDK 64-Bit Server VM (build 14-ea+28-1366, mixed mode, sharing)
+```
+- IntelliJ
+
+- OS
+Linux Mint (5.0.0-37-generic)
+
 
 Reproducer for JFR Streaming in Java 14
 - it looks like combination of `jdk.SocketRead` and `jdk.NativeMethodSample` does not work when I run the program from IntelliJ Idea
