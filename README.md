@@ -66,8 +66,9 @@ jdk.SocketRead {
 }
 ```
 
-- it looks like that the main problem is caused by printing (calling toString method) on RecordedEvent because an event 
+- It looks like that the main problem is caused by printing (calling toString method) on RecordedEvent because an event 
 is casted to `RecordedMethod` but it's emitted just as a `RecordedObject` class
 - I tried to copy the command that is generated as the first line in a console and run it from my terminal, however, it
 worked without any problem.
+- It does not look like a problem with JDK
 
